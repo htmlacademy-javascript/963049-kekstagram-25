@@ -1,7 +1,7 @@
 # Личный проект «Кекстаграм»
 
 * Студент: [Энвер Белялов](https://up.htmlacademy.ru/javascript/25/user/963049).
-* Наставник: `Неизвестно`.
+* Наставник: [Егор Глебов](https://htmlacademy.ru/profile/beast).
 
 ---
 
