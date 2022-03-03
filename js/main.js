@@ -1,22 +1,20 @@
 //Функция, возвращающая случайное целое число из переданного диапазона включительно
 
 const randomNumber = function (numberFrom, numberBefore) {
-  if (numberBefore <= numberFrom && numberFrom < 0) {
+  if (numberBefore <= numberFrom || numberFrom < 0) {
     return 0;
   }
 
-  return Math.floor(Math.random() * (numberBefore - numberFrom + 1) +numberFrom);
+  return Math.floor(Math.random() * (numberBefore - numberFrom + 1) + numberFrom);
 };
 
 randomNumber(5, 42);
 
 //Функция для проверки максимальной длины строки
 
-const stringLength = function (numberString, maxLength) {
-  if (numberString.length > 0 && maxLength <= 140) {
-    return true;
+const stringLength = function (testString, maxLength) {
+  if (!testString.length < maxLength) {
+    return false;
   }
-
-  return  false;
 };
-stringLength(1, 2);
+stringLength('testString',2);
