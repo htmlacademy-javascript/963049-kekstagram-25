@@ -12,9 +12,5 @@ randomNumber(5, 42);
 
 //Функция для проверки максимальной длины строки
 
-const stringLength = function (testString, maxLength) {
-  if (!testString.length < maxLength) {
-    return false;
-  }
-};
-stringLength('testString',2);
+const stringLength = (testString, maxLength) => testString < maxLength;
+stringLength(4,52);
