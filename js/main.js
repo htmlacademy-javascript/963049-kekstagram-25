@@ -93,21 +93,17 @@ const randomNumber = function (numberFrom, numberBefore) {
 };
 
 const getRandomArrayElement = (elements) => {
-  return elements[randomNumber(0, elements.length - 1)];
+  elements[randomNumber(0, elements.length - 1)];
 };
 
 const createDescription = () => {
-  return {
-    objectId: getRandomArrayElement(IDS),
-    objectUrl: getRandomArrayElement(URLS),
-    objectDescription: getRandomArrayElement(DESCRIPTIONS),
-    objectLikes: getRandomArrayElement(LIKES),
-    objectComments: getRandomArrayElement(COMMENTS),
-  };
+  objectId: getRandomArrayElement(IDS),
+  objectUrl: getRandomArrayElement(URLS),
+  objectDescription: getRandomArrayElement(DESCRIPTIONS),
+  objectLikes: getRandomArrayElement(LIKES),
+  objectComments: getRandomArrayElement(COMMENTS)
 };
 
 const similarDescription = Array.from({length: 25}, createDescription);
-
-console.log(similarDescription);
 
 
